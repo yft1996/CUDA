@@ -24,8 +24,8 @@ const int K= 16;
 
 /*  @property 	核函数
  *  @func     	使用共享内存(16*16)转置矩阵,将读合并写跨步优化为读写都合并
- *	@param_in 	in[]	输入矩阵
- *	@param_out	out[]	输出矩阵
+ *  @param_in 	in[]	输入矩阵
+ *  @param_out	out[]	输出矩阵
  */
 __global__ void transpose_parallel_per_element_tiled(float in[], float out[])
 {
@@ -57,8 +57,8 @@ __global__ void warmup()
 
 /*  @property 	函数
  *  @func     	比较转置后的矩阵是否正确
- *	@param_in 	mat	指向待检测矩阵的指针
- *	@param_in	ref	指向参考矩阵的指针
+ *  @param_in 	mat	指向待检测矩阵的指针
+ *  @param_in	ref	指向参考矩阵的指针
  */
 int compare_matrices(float *gpu, float *ref)
 {
@@ -75,7 +75,7 @@ int compare_matrices(float *gpu, float *ref)
 
 /*  @property 	函数
  *  @func     	打印矩阵
- *	@param_in 	mat	指向待打印矩阵的指针
+ *  @param_in 	mat	指向待打印矩阵的指针
  */
 void print_matrix(float *mat)
 {
@@ -87,8 +87,8 @@ void print_matrix(float *mat)
 }
 /*  @property 	函数
  *  @func     	使用CPU转置矩阵
- *	@param_in 	in[]	输入矩阵
- *	@param_out	out[]	输出矩阵
+ *  @param_in 	in[]	输入矩阵
+ *  @param_out	out[]	输出矩阵
  */
 void 
 transpose_CPU(float in[], float out[])
@@ -100,7 +100,7 @@ transpose_CPU(float in[], float out[])
 
 /*  @property 	函数
  *  @func     	构建一个N*N的矩阵
- *	@param_out 	mat	指向待填充矩阵的指针
+ *  @param_out 	mat	指向待填充矩阵的指针
  */
 void fill_matrix(float *mat)
 {
