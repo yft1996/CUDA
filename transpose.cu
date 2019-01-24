@@ -57,7 +57,7 @@ __global__ void warmup()
 
 /*  @property 	函数
  *  @func     	比较转置后的矩阵是否正确
- *  @param_in 	mat	指向待检测矩阵的指针
+ *  @param_in 	gpu	指向待检测矩阵的指针
  *  @param_in	ref	指向参考矩阵的指针
  */
 int compare_matrices(float *gpu, float *ref)
